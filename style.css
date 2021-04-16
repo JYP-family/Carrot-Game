@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'AppleSDGothicNeo', sans-serif;
+    text-rendering: optimizeLegibility;
+    box-sizing: border-box;
+    color: #342d51;
+    text-align: center;
+}
+
+.game {
+    background: url('img/background.png') center/cover;
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    height: 500px;
+    border-radius: 16px;
+    margin: auto;
+}
+
+.game__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+}
+
+.game__timer {
+    width: 100px;
+    background-color: white;
+    text-align: center;
+    border: 3px solid #333;
+    border-radius: 10px;
+    font-size: 28px;
+    padding: 5px;
+    margin-bottom: 8px;
+    visibility: hidden;
+}    
+
+.game__score {
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    font-size: 32px;
+    background-color: rosybrown;
+    border: 3px solid #333;
+    border-radius: 50%;
+    color: seashell;
+    line-height: 50px;
+    margin-bottom: 8px;
+    visibility: hidden;
+}
+
+.game__field {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+}
+
+.game__button {
+    border: 3px solid #333;
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+    background-color: wheat;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 1px 4px 0 rgb(0, 0, 0, 0.7);
+}
+
+.game__button i:hover {
+    font-size: 20px;
+    transform: ;
+}
+
+.game__button:active {
+    box-shadow: 1px 1px 0 rgb(0, 0, 0, 0.7);
+    position: relative;
+    top:2px;
+}
+
+.pop-up {
+    border-radius: 20px;
+    width: 400px;
+    height: 124px;
+    margin: auto;
+    background-color: #00000090;
+    color: white;
+    transform: translateY(-150%);
+}
+
+.pop-up--hide {
+    display: none;
+}
+
+.pop-up__refresh {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    background-color: wheat;
+    border: 3px solid #333;
+    transition: transfrom 300ms ease-in;
+    margin-top: 10px;
+}
+
+.pop-up__refresh:hover {
+    transform: scale(1.1);
+}
+
+.pop-up__message {
+    display: block;
+    font-size: 32px;
+}
+
+.hide {
+    display: none;
+}
+
+.carrot:hover,
+.bug:hover {
+    transform: scale(1.1);
+}
